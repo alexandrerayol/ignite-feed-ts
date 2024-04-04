@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  background-color: var(--grey-800);
+
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.header > div > span {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #e1e1e6;
+  font-family: sans-serif;
+}
+
+.header > div > img {
+  height: 2rem;
+}

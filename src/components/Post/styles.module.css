@@ -1,0 +1,132 @@
+.wrapper {
+  background-color: var(--grey-800);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.wrapper + .wrapper {
+  margin-top: 2rem;
+}
+
+.wrapper > header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.authorDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.authorDetails > span,
+time {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--grey-400);
+}
+
+.profileImgWrapper {
+  overflow: hidden;
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
+  padding: 3px;
+  background-color: var(--grey-800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--green-500);
+}
+
+.profileImgWrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.content {
+  border-bottom: 1px solid var(--grey-400);
+  padding-bottom: 1.5rem;
+}
+
+.content p + p {
+  margin-top: 1.5rem;
+}
+
+.content a {
+  text-decoration: none;
+  color: var(--green-300);
+}
+
+.content a:hover {
+  color: var(--green-500);
+}
+
+.form {
+  width: 100%;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form textarea:focus {
+  box-shadow: 0 0 0 1px var(--green-300);
+}
+
+.form textarea {
+  width: 100%;
+  resize: none;
+  height: 6rem;
+  outline: none;
+  background-color: var(--grey-900);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  line-height: 140%;
+  color: var(--grey-300);
+}
+
+.form textarea::placeholder {
+  color: #7c7c8a;
+  line-height: 140%;
+}
+
+.form button {
+  width: 6.75rem;
+  height: 49px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--green-500);
+  color: var(--white);
+  font-weight: 500;
+  transition: filter 0.1s;
+  cursor: not-allowed;
+}
+
+.form button:not(:disabled):hover {
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+
+.form > div {
+  display: none;
+}
+
+.form:focus-within div {
+  display: block;
+}

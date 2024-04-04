@@ -1,0 +1,98 @@
+.wrapper {
+  width: 256px;
+  height: 294px;
+  border-radius: 8px;
+  background-color: var(--grey-800);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+.cover {
+  width: 100%;
+  height: 25%;
+  object-fit: cover;
+}
+
+.profileDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2.5rem 0 1rem 0;
+}
+
+.profileDetails > strong {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.profileDetails > span {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #8d8d99;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--grey-400);
+  padding: 1.5rem 2rem 2rem 2rem;
+}
+
+.profileButton {
+  width: 12.5rem;
+  outline: none;
+  background-color: #202024;
+  border: 1px solid #00875f;
+  border-radius: 8px;
+  color: #00b37e;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1rem 0;
+  transition:
+    border 0.1s,
+    color 0.1s,
+    background-color 0.1s;
+}
+
+.profileButton:hover {
+  border: 1px solid #00b37e;
+  background-color: #00b37e;
+  color: #202024;
+}
+
+.profileImgWrapper {
+  position: absolute;
+  overflow: hidden;
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
+  padding: 3px;
+  background-color: var(--grey-800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--green-500);
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profileImgWrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.sidebar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
